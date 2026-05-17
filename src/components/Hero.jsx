@@ -1,5 +1,4 @@
 import React from "react";
-import { PawPrint, Cat, Dog, Home, Scissors } from "lucide-react";
 
 const IMG_DOG = "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80&auto=format&fit=crop";
 const IMG_CAT = "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&q=80&auto=format&fit=crop";
