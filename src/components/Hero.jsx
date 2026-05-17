@@ -1,15 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-//  components/Hero.jsx
-//
-//  Full-screen landing section.
-//  - Gradient background with decorative paw watermarks
-//  - Headline + subtext + two CTA buttons
-//  - Two floating pet images (blob shapes) on desktop
-//  - Floating badges
-//  - Stat counters row
-//  - Icons: Lucide React (PawPrint, Cat, Dog, Home, Scissors)
-// ─────────────────────────────────────────────────────────────
-
 import React from "react";
 import { PawPrint, Cat, Dog, Home, Scissors } from "lucide-react";
 
@@ -21,32 +9,6 @@ const STATS = [
     { value: "98%", label: "Satisfaction" },
     { value: "500+", label: "Adoptions" },
 ];
-
-function FloatingBadge({ icon: Icon, iconColor, text, color, style }) {
-    return (
-        <div
-            style={{
-                position: "absolute",
-                background: "white",
-                borderRadius: "20px",
-                padding: "12px 20px",
-                boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
-                fontFamily: "'Nunito', sans-serif",
-                fontWeight: "800",
-                fontSize: "13px",
-                color,
-                whiteSpace: "nowrap",
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                ...style,
-            }}
-        >
-            <Icon size={15} color={iconColor} strokeWidth={2.5} />
-            {text}
-        </div>
-    );
-}
 
 function Hero() {
     const scrollTo = (id) =>
